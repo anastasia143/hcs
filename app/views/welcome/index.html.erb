@@ -1,1 +1,7 @@
+﻿# coding: utf-8
 <h1>Hello, Rails!</h1>
+
+<%=form_for Task.new do |f|%>
+    <%=f.label :file_name %>
+    <%=f.file_field :file_name%>
+<% end %>
