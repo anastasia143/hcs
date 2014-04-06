@@ -21,6 +21,9 @@
     <td><%= s.h2t1 %></td>
     <td><%= s.h3t1 %></td>
     <td><%= s.h3t2 %></td>
+    <td><%= link_to 'Edit', edit_student_path(s) %></td>
+    <td><%= link_to 'Destroy', student_path(s),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
