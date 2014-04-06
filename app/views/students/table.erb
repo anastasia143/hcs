@@ -1,0 +1,22 @@
+<table>
+   <tr>
+       <th>Student</th>
+       <th>1.1</th>
+       <th>1.2</th>
+       <th>1.3</th>
+       <th>2.1</th>
+       <th>3.1</th>
+       <th>3.2</th>
+   </tr>
+<% @students.each do |student| %>
+   <tr>
+       <td><%= student.surname %></td>
+       <td><%= student.h1t1 %></td>
+       <td><%= student.h1t2 %></td>
+       <td><%= student.h1t3 %></td>
+       <td><%= student.h2t1 %></td>
+       <td><%= student.h3t1 %></td>
+       <td><%= student.h3t2 %></td>
+   </tr>
+<% end %>
+</table>

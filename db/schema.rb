@@ -11,9 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140330190745) do
+ActiveRecord::Schema.define(version: 20140406073228) do
 
   create_table "contacts", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "microposts", force: true do |t|
+    t.string   "content"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "students", force: true do |t|
+    t.string   "name"
+    t.string   "surname"
+    t.float    "phone"
+    t.string   "email"
+    t.float    "h1t1"
+    t.text     "h1t1_comment"
+    t.float    "h1t2"
+    t.text     "h1t2_comment"
+    t.float    "h1t3"
+    t.text     "h1t3_comment"
+    t.float    "h2t1"
+    t.text     "h2t1_comment"
+    t.float    "h3t1"
+    t.text     "h3t1_comment"
+    t.float    "h3t2"
+    t.text     "h3t2_comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

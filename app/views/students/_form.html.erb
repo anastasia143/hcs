@@ -1,0 +1,42 @@
+<%= form_for @student do |s| %>
+  <p>
+    <%= s.label :surname %><br>
+    <%= s.text_field :surname %>
+  </p>
+  <p>
+    <%= s.label :name %><br>
+    <%= s.text_field :name %>
+  </p>
+  <p>
+    <%= s.label :telephone %><br>
+    <%= s.text_field :phone %>
+  </p>
+  <p>
+    <%= s.label :hw1t1 %><br>
+    <%= s.text_field :h1t1 %>
+  </p>
+  <p>
+    <%= s.label :hw1t2 %><br>
+    <%= s.text_field :h1t2 %>
+  </p>
+  <p>
+    <%= s.label :hw1t3 %><br>
+    <%= s.text_field :h1t3 %>
+  </p>
+  <p>
+    <%= s.label :hw2t1 %><br>
+    <%= s.text_field :h2t1 %>
+  </p>
+  <p>
+    <%= s.label :hw3t1 %><br>
+    <%= s.text_field :h3t1 %>
+  </p>
+  <p>
+    <%= s.label :hw3t2 %><br>
+    <%= s.text_field :h3t2 %>
+  </p>
+ 
+  <p>
+    <%= s.submit %>
+  </p>
+<% end %>

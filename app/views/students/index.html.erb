@@ -1,0 +1,26 @@
+<h1>Students</h1>
+<table border="1">
+  <tr>
+    <th>Surname</th>
+    <th>Name</th>
+    <th>1.1</th>
+    <th>1.2</th>
+    <th>1.3</th>
+    <th>2.1</th>
+    <th>3.1</th>
+    <th>3.2</th>
+  </tr>
+ 
+<% @students.each do |s| %>
+  <tr>
+    <td><%= s.surname%></td>
+    <td><%= s.name %></td>
+    <td><%= s.h1t1 %></td>
+    <td><%= s.h1t2 %></td>
+    <td><%= s.h1t3 %></td>
+    <td><%= s.h2t1 %></td>
+    <td><%= s.h3t1 %></td>
+    <td><%= s.h3t2 %></td>
+  </tr>
+<% end %>
+</table>
