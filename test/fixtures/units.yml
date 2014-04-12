@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  surname: MyString
+  number: 1.5
+  homework: 1.5
+  state: 1.5
+  comment: MyText
+
+two:
+  surname: MyString
+  number: 1.5
+  homework: 1.5
+  state: 1.5
+  comment: MyText

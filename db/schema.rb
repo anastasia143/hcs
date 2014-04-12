@@ -11,9 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140406073228) do
+ActiveRecord::Schema.define(version: 20140412070518) do
 
   create_table "contacts", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "homework_tables", force: true do |t|
+    t.string   "surname"
+    t.float    "number"
+    t.float    "homework"
+    t.float    "state"
+    t.text     "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -42,6 +52,35 @@ ActiveRecord::Schema.define(version: 20140406073228) do
     t.text     "h3t1_comment"
     t.float    "h3t2"
     t.text     "h3t2_comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tasks", force: true do |t|
+    t.float    "number"
+    t.float    "homework"
+    t.text     "condition"
+    t.date     "time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "units", force: true do |t|
+    t.string   "surname"
+    t.float    "number"
+    t.float    "homework"
+    t.float    "state"
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "surname"
+    t.string   "patronymic"
+    t.string   "phone"
+    t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

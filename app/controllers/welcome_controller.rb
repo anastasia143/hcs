@@ -1,4 +1,6 @@
 class WelcomeController < ApplicationController
-  def index
-  end
+    def index
+        @users = User.all
+        @tasks = Task.all
+    end
 end

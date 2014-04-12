@@ -1,0 +1,23 @@
+<h1>Students</h1>
+<table border="1">
+  <tr>
+    <th>Surname</th>
+    <th>Name</th>
+    <th>Patronymic</th>
+    <th>Phone</th>
+    <th>Email</th>
+  </tr>
+ 
+<% @users.each do |s| %>
+  <tr>
+    <td><%= s.surname%></td>
+    <td><%= s.name %></td>
+    <td><%= s.patronymic %></td>
+    <td><%= s.phone %></td>
+    <td><%= s.email %></td>
+    <td><%= link_to 'Edit', edit_student_path(s) %></td>
+    <td><%= link_to 'Destroy', student_path(s),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>

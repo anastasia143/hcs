@@ -2,6 +2,10 @@ Hcs::Application.routes.draw do
  
    get "welcome/index"
   root "welcome#index"
-   resources :contacts
+   resources :users
+   resources :units
+   resources :tasks
    resources :students
+   resources :contacts
+   resources :homework_tables
 end
