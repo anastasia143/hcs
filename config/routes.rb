@@ -7,4 +7,5 @@ Hcs::Application.routes.draw do
    resources :tasks
    resources :students
    resources :contacts
+   resources :task_files
 end

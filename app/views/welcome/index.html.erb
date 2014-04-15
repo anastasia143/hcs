@@ -1,16 +1,18 @@
-<h1>Hello, Rails!</h1>
+<h1>Hometask</h1>
 
-<%=form_for Contact.new, :html => {:multipart => true} do |f|%>
+<%=form_for TaskFile.new, :html => {:multipart => true} do |s|%>
 
 <div class="field">
 
-<%=f.label :image %><br />
+<%=s.label :file %><br />
 
-<%=f.file_field :image%>
+<%=s.file_field :f%>
 
   </div>
 
 <% end %>
+
+<%= link_to 'Add task', new_task_path %>
 
 <table border="1">
 <tr>
@@ -37,5 +39,7 @@
   </tr>
 <% end %>
 </table>
+
+
 
 

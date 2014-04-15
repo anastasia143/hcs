@@ -11,9 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140412070518) do
+ActiveRecord::Schema.define(version: 20140413184803) do
 
   create_table "contacts", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "data_files", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -52,6 +57,15 @@ ActiveRecord::Schema.define(version: 20140412070518) do
     t.text     "h3t1_comment"
     t.float    "h3t2"
     t.text     "h3t2_comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "task_files", force: true do |t|
+    t.string   "name"
+    t.string   "date"
+    t.string   "comment"
+    t.integer  "size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
