@@ -1,12 +1,13 @@
 <h1>Hometask</h1>
 
-<%=form_for TaskFile.new, :html => {:multipart => true} do |s|%>
+
+<%=form_for @datafile, :html => {:multipart => true} do |s|%>
 
 <div class="field">
 
 <%=s.label :file %><br />
 
-<%=s.file_field :f%>
+<%=s.file_field :dfile%>
 
   </div>
 
